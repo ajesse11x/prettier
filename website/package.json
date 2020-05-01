@@ -5,7 +5,9 @@
     "publish-gh-pages": "docusaurus-publish",
     "start": "concurrently \"docusaurus-start\" \"webpack -d -w\"",
     "svgo": "svgo --pretty --indent=2 --config=svgo.yml",
-    "svgo-all": "find static | grep '\\.svg$' | xargs -Iz -n 1 yarn svgo z"
+    "svgo-all": "find static | grep '\\.svg$' | xargs -Iz -n 1 yarn svgo z",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "clipboard": "2.0.0",
@@ -15,7 +17,8 @@
     "lz-string": "1.4.4",
     "prop-types": "15.6.1",
     "react": "16.3.1",
-    "react-dom": "16.3.1"
+    "react-dom": "16.3.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@sandhose/prettier-animated-logo": "1.0.3",
@@ -28,5 +31,6 @@
     "svgo": "1.0.4",
     "webpack": "4.5.0",
     "webpack-cli": "2.0.14"
-  }
+  },
+  "snyk": true
 }
