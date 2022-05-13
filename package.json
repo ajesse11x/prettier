@@ -49,7 +49,7 @@
     "normalize-path": "3.0.0",
     "parse5": "5.0.0",
     "parse5-htmlparser2-tree-adapter": "5.0.0",
-    "postcss-less": "1.1.5",
+    "postcss-less": "3.0.0",
     "postcss-media-query-parser": "0.2.3",
     "postcss-scss": "1.0.6",
     "postcss-selector-parser": "2.2.3",
